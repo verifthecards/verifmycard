@@ -1,0 +1,166 @@
+
+<!-- Inclure le script de configuration de la base de donnée -->
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <!-- Meta données(Mots clés, description, robots...) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Chemin d'accès menant vers les fichiers scss -->
+    <link rel="stylesheet" href="assets/lib/tailwindcss/tailwind.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/card.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;0,600;1,100;1,400&family=Montserrat:wght@400;600;700&family=Work+Sans:ital,wght@1,400;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Titre -->
+    <title>Verif My Card</title>
+</head>
+<style>
+    #nav_left{display:none;}
+    #header_startPage
+    {
+        background-image: linear-gradient(to bottom, rgba(4, 1, 9, 0.872) 3%, rgba(7, 1, 17, 0.967) 60%), url("../img/picture_1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .btn 
+    {
+        background-color: #1212a3;
+        border-radius: 0px;
+        color: #fff;
+        font-weight: normal;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        transition: var(--time);
+        text-align: center;
+        text-decoration-line: none;
+        width: auto;
+    }
+</style>
+<body>
+    <nav class="nav fixed w-full top-0 pt-6" style="z-index:999;">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <img src="assets/img/card.png" class="h-10 mr-2" alt="Verif Gifts Cards" />
+                <span class="font-bold text-white text-2xl">VerifMyCard</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1">
+                    <a href="verif.html" title="Télécharger Verif Gifts Cards">
+                        <img src="assets/img/check.png" height="23" width="23">
+                    </a>
+                </button>
+                <div class="relative flex items-center hidden md:flex">
+                    <a href="test.html" class="btn flex items-center align-middle hover:shadow-lg rounded-full" style="border:none;">
+                        <img src="assets/img/check.png" class="mr-2" height="18" width="18">
+                        Authentifier
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HomePage -->
+    <section class="flex flex-wrap justify-around w-full pb-40" id="header_startPage">
+        <div class="flex flex-wrap justify-center pt-40 sm:pt-56
+         p-2 sm:p-32">
+         <div class="block">
+            <h1 class="font-bold text-white text-center text-3xl sm:text-6xl mb-10" style="line-height:1.3;">
+                Le meilleur outil pour authentifier <br> la validité de votre carte de recharge
+            </h1>
+            <p class="flex justify-center">
+                <a href="verif.html" class="btn flex w-64 items-center align-middle hover:shadow-lg rounded-full">
+                    <span class="text-center">Lancer l'authentification</span>
+                </a>
+            </p>
+         </div>
+        </div>
+    </section>
+
+    <div class="flex flex-wrap justify-center bg-white gap-20 pt-20 pb-20">
+        <div class="block text-center">
+            <h2 class="font-bold text-3xl sm:text-5xl" style="color:var(--first-color);">+ 350.000</h2>
+            <h4 class="font-bold sm:text-2xl" style="color:var(--black);">Utilisateurs</h4>
+        </div>
+        <div class="block text-center">
+            <h2 class="font-bold text-3xl sm:text-5xl" style="color:var(--first-color);">07</h2>
+            <h4 class="font-bold sm:text-2xl" style="color:var(--black);">Partenaires</h4>
+        </div>
+        <div class="block text-center">
+            <h2 class="font-bold text-3xl sm:text-5xl" style="color:var(--first-color);">+ 10M</h2>
+            <h4 class="font-bold sm:text-2xl" style="color:var(--black);">D'Investissements</h4>
+        </div>
+        <div class="block text-center">
+            <h2 class="font-bold text-3xl sm:text-5xl" style="color:var(--first-color);">05</h2>
+            <h4 class="font-bold sm:text-2xl" style="color:var(--black);">Datacenters</h4>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- Testimonials -->
+    <div class="flex justify-around text-center pt-10" id="testimonials">
+        <h1 class="max-w-2xl text-center text-4xl font-extrabold md:text-5xl xl:text-6xl" style="line-height: 1.2;">Ils/Elles adorent de VerifMyCard</h1>
+    </div>
+    <div class="flex justify-around" id="testimonials">
+        <div class="pt-10 pb-56 sm:p-40 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                <div class="mb-8">
+                    <img class="rounded-full h-32 w-32" src="assets/img/mystery-man.jpg" alt="photo">
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-black font-bold mb-2">Pierre Trudeau</p>
+                    <p class="text-base text-gray-600 font-normal">
+                        <i>
+                            " Je suis novice dans l'utilisation des coupons NEOSURF et j'étais un peu sceptique au début. Grâce à ce site, j'ai pu vérifier l'authenticité de mes coupons en toute simplicité. Les instructions sont claires et le processus est rapide. Je recommande vivement ce service à tous ceux qui souhaitent utiliser les coupons NEOSURF en toute sécurité. "
+                        </i>
+                    </p>
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                <div class="mb-8">
+                    <img class="object-center object-cover rounded-full h-32 w-32" src="assets/img/mystery-man.jpg" alt="photo">
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-black font-bold mb-2">Junior MBAZOLA</p>
+                    <p class="text-base text-gray-600 font-normal">
+                        <i>
+                            " J'utilise les coupons PCS depuis longtemps et ce site est devenu mon allié incontournable. Il m'a déjà évité plusieurs mauvaises surprises. La base de données est régulièrement mise à jour, ce qui garantit la fiabilité des informations. Je suis très satisfait de ce service. "
+                        </i>
+                    </p>
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                <div class="mb-8">
+                    <img class="object-center object-cover rounded-full h-32 w-32" src="assets/img/mystery-man.jpg" alt="photo">
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-black font-bold mb-2">Sindy Meana</p>
+                    <p class="text-base text-gray-600 font-normal">
+                        <i>
+                            " VerifMyCard est un service d'authentification incroyable. Le temps de vérification est très court et productif. "
+                        </i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Footer: Informations complémentaires -->
+    
+    <!-- Script: Chemins d'accès vers les fichiers JavaScript -->
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/register.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
